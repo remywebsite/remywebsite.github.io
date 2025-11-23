@@ -1,3 +1,11 @@
+/* CSS Variables - Change these values to update all border-radius at once */
+:root {
+	--border-radius-small: 15px;
+	--border-radius-medium: 15px;
+	--border-radius-large: 15px;
+	--border-radius-xlarge: 10%;
+}
+
 /* Reset and base styles */
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -68,7 +76,7 @@ a:hover {
 .logo {
     max-width: 45%;
     height: auto;
-    border-radius: 15%;
+    border-radius: var(--border-radius-xlarge);
     transition: all 0.3s ease;
 }
 
@@ -84,7 +92,7 @@ a:hover {
     color: #1b1b1b;
     background-color: rgb(255, 253, 240);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
     text-decoration: none;
     display: inline-flex; 
     align-items: center; 
@@ -135,7 +143,7 @@ a:hover {
     background-color: #8a1c1c;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transform: translateY(-10px);
     transition: transform 0.4s ease, background-color 0.3s ease;
@@ -185,13 +193,13 @@ a:hover {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
 }
 
 details {
     background-color: #333333;
     border: 2px solid #9bcb4b; /* Green outline */
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     padding: 0.5em;
     margin: 1em 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -248,7 +256,7 @@ details p {
     color: #141414;
     padding: 0.5em;
     margin: 0.5em auto;
-    border-radius: 15px;
+    border-radius: var(--border-radius-large);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
@@ -266,7 +274,7 @@ details p {
     max-width: 100%;
     height: auto;
     margin-bottom: 0.75em;
-    border-radius: 15px;
+    border-radius: var(--border-radius-large);
 }
 
 .image-block-memes span {
@@ -291,12 +299,12 @@ details p {
 
 ::-webkit-scrollbar-track {
 	background: #333333; 
-	border-radius: 10px; 
+	border-radius: var(--border-radius-medium); 
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #8a1c1c; 
-	border-radius: 10px; 
+	border-radius: var(--border-radius-medium); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
