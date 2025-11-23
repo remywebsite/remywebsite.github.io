@@ -190,6 +190,7 @@ a:hover {
 
 details {
     background-color: #333333;
+    border: 2px solid #9bcb4b; /* Green outline */
     border-radius: 8px;
     padding: 0.5em;
     margin: 1em 0;
